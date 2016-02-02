@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "d773d5e9b23ab8c5e7119b251736a626"
+build_time: [507763443, 658588000]
+inputs:
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/TwitterClient.swift": !dirty [9223372036854775807, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/ViewController.swift": [507763272, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/AppDelegate.swift": [507762845, 0]

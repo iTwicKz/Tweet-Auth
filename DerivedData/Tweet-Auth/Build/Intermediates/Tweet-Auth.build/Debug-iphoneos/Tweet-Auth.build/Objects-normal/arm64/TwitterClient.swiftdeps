@@ -1,0 +1,206 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "twitterConsumerKey"
+- "twitterConsumerSecret"
+- "twitterBaseURL"
+- "TwitterClient"
+provides-nominal:
+- "C10Tweet_Auth13TwitterClient"
+provides-member:
+- ["C10Tweet_Auth13TwitterClient", ""]
+provides-dynamic-lookup:
+- "sharedInstance"
+depends-top-level:
+- "twitterBaseURL"
+- "StringLiteralType"
+- "twitterConsumerSecret"
+- "TwitterClient"
+- "BDBOAuth1SessionManager"
+- "NSURL"
+- "twitterConsumerKey"
+depends-member:
+- ["CSo20AFHTTPSessionManager", "TwitterClient"]
+- ["CSo20AFHTTPSessionManager", "init"]
+- ["CSo20AFHTTPSessionManager", "sharedInstance"]
+- !private ["CSo20AFHTTPSessionManager", "twitterBaseURL"]
+- !private ["CSo20AFHTTPSessionManager", "twitterConsumerKey"]
+- !private ["CSo20AFHTTPSessionManager", "twitterConsumerSecret"]
+- ["CSo19AFURLSessionManager", "TwitterClient"]
+- ["CSo19AFURLSessionManager", "init"]
+- ["CSo19AFURLSessionManager", "sharedInstance"]
+- !private ["CSo19AFURLSessionManager", "twitterBaseURL"]
+- !private ["CSo19AFURLSessionManager", "twitterConsumerKey"]
+- !private ["CSo19AFURLSessionManager", "twitterConsumerSecret"]
+- !private ["PSs9AnyObject", "TwitterClient"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "twitterBaseURL"]
+- !private ["PSs9AnyObject", "twitterConsumerKey"]
+- !private ["PSs9AnyObject", "twitterConsumerSecret"]
+- ["PSs9AnyObject", ""]
+- ["CSo23BDBOAuth1SessionManager", "TwitterClient"]
+- ["CSo23BDBOAuth1SessionManager", "init"]
+- ["CSo23BDBOAuth1SessionManager", "sharedInstance"]
+- !private ["CSo23BDBOAuth1SessionManager", "twitterBaseURL"]
+- !private ["CSo23BDBOAuth1SessionManager", "twitterConsumerKey"]
+- !private ["CSo23BDBOAuth1SessionManager", "twitterConsumerSecret"]
+- ["CSo23BDBOAuth1SessionManager", ""]
+- !private ["PSs11CVarArgType", "TwitterClient"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "sharedInstance"]
+- !private ["PSs11CVarArgType", "twitterBaseURL"]
+- !private ["PSs11CVarArgType", "twitterConsumerKey"]
+- !private ["PSs11CVarArgType", "twitterConsumerSecret"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "TwitterClient"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "sharedInstance"]
+- !private ["PSs23CustomStringConvertible", "twitterBaseURL"]
+- !private ["PSs23CustomStringConvertible", "twitterConsumerKey"]
+- !private ["PSs23CustomStringConvertible", "twitterConsumerSecret"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "TwitterClient"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "sharedInstance"]
+- !private ["PSs9Equatable", "twitterBaseURL"]
+- !private ["PSs9Equatable", "twitterConsumerKey"]
+- !private ["PSs9Equatable", "twitterConsumerSecret"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "TwitterClient"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "sharedInstance"]
+- !private ["PSs8Hashable", "twitterBaseURL"]
+- !private ["PSs8Hashable", "twitterConsumerKey"]
+- !private ["PSs8Hashable", "twitterConsumerSecret"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "TwitterClient"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "sharedInstance"]
+- !private ["PSo8NSCoding", "twitterBaseURL"]
+- !private ["PSo8NSCoding", "twitterConsumerKey"]
+- !private ["PSo8NSCoding", "twitterConsumerSecret"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "TwitterClient"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "sharedInstance"]
+- !private ["PSo9NSCopying", "twitterBaseURL"]
+- !private ["PSo9NSCopying", "twitterConsumerKey"]
+- !private ["PSo9NSCopying", "twitterConsumerSecret"]
+- ["PSo9NSCopying", ""]
+- ["CSo8NSObject", "TwitterClient"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "twitterBaseURL"]
+- !private ["CSo8NSObject", "twitterConsumerKey"]
+- !private ["CSo8NSObject", "twitterConsumerSecret"]
+- !private ["PSo16NSObjectProtocol", "TwitterClient"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "twitterBaseURL"]
+- !private ["PSo16NSObjectProtocol", "twitterConsumerKey"]
+- !private ["PSo16NSObjectProtocol", "twitterConsumerSecret"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "TwitterClient"]
+- ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "sharedInstance"]
+- !private ["PSo14NSSecureCoding", "twitterBaseURL"]
+- !private ["PSo14NSSecureCoding", "twitterConsumerKey"]
+- !private ["PSo14NSSecureCoding", "twitterConsumerSecret"]
+- ["PSo14NSSecureCoding", ""]
+- ["CSo5NSURL", "init"]
+- !private ["PSo24NSURLSessionDataDelegate", "TwitterClient"]
+- ["PSo24NSURLSessionDataDelegate", "init"]
+- ["PSo24NSURLSessionDataDelegate", "sharedInstance"]
+- !private ["PSo24NSURLSessionDataDelegate", "twitterBaseURL"]
+- !private ["PSo24NSURLSessionDataDelegate", "twitterConsumerKey"]
+- !private ["PSo24NSURLSessionDataDelegate", "twitterConsumerSecret"]
+- ["PSo24NSURLSessionDataDelegate", ""]
+- !private ["PSo20NSURLSessionDelegate", "TwitterClient"]
+- ["PSo20NSURLSessionDelegate", "init"]
+- ["PSo20NSURLSessionDelegate", "sharedInstance"]
+- !private ["PSo20NSURLSessionDelegate", "twitterBaseURL"]
+- !private ["PSo20NSURLSessionDelegate", "twitterConsumerKey"]
+- !private ["PSo20NSURLSessionDelegate", "twitterConsumerSecret"]
+- ["PSo20NSURLSessionDelegate", ""]
+- !private ["PSo28NSURLSessionDownloadDelegate", "TwitterClient"]
+- ["PSo28NSURLSessionDownloadDelegate", "init"]
+- ["PSo28NSURLSessionDownloadDelegate", "sharedInstance"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "twitterBaseURL"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "twitterConsumerKey"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "twitterConsumerSecret"]
+- ["PSo28NSURLSessionDownloadDelegate", ""]
+- !private ["PSo24NSURLSessionTaskDelegate", "TwitterClient"]
+- ["PSo24NSURLSessionTaskDelegate", "init"]
+- ["PSo24NSURLSessionTaskDelegate", "sharedInstance"]
+- !private ["PSo24NSURLSessionTaskDelegate", "twitterBaseURL"]
+- !private ["PSo24NSURLSessionTaskDelegate", "twitterConsumerKey"]
+- !private ["PSo24NSURLSessionTaskDelegate", "twitterConsumerSecret"]
+- ["PSo24NSURLSessionTaskDelegate", ""]
+- ["C10Tweet_Auth13TwitterClient", "TwitterClient"]
+- ["C10Tweet_Auth13TwitterClient", "deinit"]
+- ["C10Tweet_Auth13TwitterClient", "init"]
+- ["C10Tweet_Auth13TwitterClient", "sharedInstance"]
+- !private ["C10Tweet_Auth13TwitterClient", "twitterBaseURL"]
+- !private ["C10Tweet_Auth13TwitterClient", "twitterConsumerKey"]
+- !private ["C10Tweet_Auth13TwitterClient", "twitterConsumerSecret"]
+- ["PSs32_FileReferenceLiteralConvertible", "init"]
+- ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "CSo20AFHTTPSessionManager"
+- "CSo19AFURLSessionManager"
+- "PSs9AnyObject"
+- "CSo23BDBOAuth1SessionManager"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo5NSURL"
+- "PSo24NSURLSessionDataDelegate"
+- "PSo20NSURLSessionDelegate"
+- "PSo28NSURLSessionDownloadDelegate"
+- "PSo24NSURLSessionTaskDelegate"
+- "C10Tweet_Auth13TwitterClient"
+- "PSs32_FileReferenceLiteralConvertible"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIWebView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIImage+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/NSString+BDBOAuth1Manager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/NSDictionary+BDBOAuth1Manager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1SessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1RequestSerializer.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1Manager-umbrella.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Modules/module.modulemap"
+interface-hash: "12b9e90049e6474b24b2cf516a71f5cd"

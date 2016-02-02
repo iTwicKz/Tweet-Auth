@@ -1,0 +1,1 @@
+ const unsigned char Pods_Tweet_AuthVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_Tweet_Auth  PROJECT:Pods-1" "\n"; const double Pods_Tweet_AuthVersionNumber __attribute__ ((used)) = (double)1.;
