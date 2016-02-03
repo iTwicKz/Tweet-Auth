@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 @import BDBOAuth1Manager;
 #endif
 
@@ -110,6 +111,19 @@ SWIFT_CLASS("_TtC10Tweet_Auth11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class User;
+@class NSDate;
+@class NSDictionary;
+
+SWIFT_CLASS("_TtC10Tweet_Auth5Tweet")
+@interface Tweet : NSObject
+@property (nonatomic, strong) User * __nullable user;
+@property (nonatomic, copy) NSString * __nullable text;
+@property (nonatomic, copy) NSString * __nullable createdAtString;
+@property (nonatomic, strong) NSDate * __nullable createdAt;
+- (nonnull instancetype)initWithDictionary:(NSDictionary * __nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSURLSessionConfiguration;
 @class NSCoder;
 
@@ -119,6 +133,17 @@ SWIFT_CLASS("_TtC10Tweet_Auth13TwitterClient")
 - (null_unspecified instancetype)initWithBaseURL:(NSURL * __null_unspecified)baseURL consumerKey:(NSString * __null_unspecified)consumerKey consumerSecret:(NSString * __null_unspecified)consumerSecret OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBaseURL:(NSURL * __nullable)url sessionConfiguration:(NSURLSessionConfiguration * __nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Tweet_Auth4User")
+@interface User : NSObject
+@property (nonatomic, copy) NSString * __nullable name;
+@property (nonatomic, copy) NSString * __nullable screenName;
+@property (nonatomic, copy) NSString * __nullable profileImageURL;
+@property (nonatomic, copy) NSString * __nullable tagLine;
+@property (nonatomic, strong) NSDictionary * __nonnull dictionary;
+- (nonnull instancetype)initWithDictionary:(NSDictionary * __nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSBundle;

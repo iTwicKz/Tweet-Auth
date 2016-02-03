@@ -50,8 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             TwitterClient.sharedInstance.requestSerializer.saveAccessToken(accessToken)
             
-            let manager = AFHTTPSessionManager()
-            manager.GET("1.1/account/verify_credentials.json", parameters: nil, progress: nil, success: { (operation: NSURLSessionDataTask, response: AnyObject?) -> Void in
+            TwitterClient.sharedInstance.GET("1.1/account/verify_credentials.json", parameters: nil, progress: nil, success: { (operation: NSURLSessionDataTask, response: AnyObject?) -> Void in
                 print("It worked!!!")
                 print("user: \(response)")
                 }, failure: { (operation: NSURLSessionDataTask?, error: NSError) -> Void in
