@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C10Tweet_Auth14ViewController", ""]
 provides-dynamic-lookup:
-- "onLogin"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "onLogin"
 depends-top-level:
-- !private "NSError"
-- !private "StringLiteralType"
-- !private "Void"
-- !private "print"
-- !private "UIApplication"
-- !private "NSURL"
 - "UIViewController"
 - !private "TwitterClient"
-- !private "BDBOAuth1Credential"
 - "ViewController"
+- !private "BDBOAuth1Credential"
+- !private "StringLiteralType"
 - "AnyObject"
+- !private "NSError"
+- !private "Void"
+- !private "UIApplication"
+- !private "print"
+- !private "NSURL"
 depends-member:
 - !private ["CSo23AFHTTPRequestSerializer", "removeAccessToken"]
 - !private ["CSo20AFHTTPSessionManager", "fetchRequestTokenWithPath"]

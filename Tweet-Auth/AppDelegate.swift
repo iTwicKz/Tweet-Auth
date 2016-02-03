@@ -44,24 +44,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
         TwitterClient.sharedInstance.fetchAccessTokenWithPath("oauth/access_token", method: "POST", requestToken: BDBOAuth1Credential(queryString: url.query), success: { (accessToken: BDBOAuth1Credential!) -> Void in
             print("Got access token")
             
             TwitterClient.sharedInstance.requestSerializer.saveAccessToken(accessToken)
             
             let manager = AFHTTPSessionManager()
-//            manager.GET("1.1/account/verify_credentials.json", parameters: nil, success: { (operation: NSURLSessionTask!, response: AnyObject!) -> Void in
-//                    print("It worked!!!")
-//                }, failure: { (operation: NSURLSessionTask!, error: NSError!) -> Void in
-//                    print("It did not work")
-//            })
-            
-            manager.GET("1.1/account/verify_credentials.json", parameters: nil, success: { (operation: NSURLSessionTask, response: AnyObject) -> Void in
-                print("It worked")
-                }, failure: { (operation: NSURLSessionTask, error: NSError!) -> Void in
-                    print("It does not work")
+            manager.GET("1.1/account/verify_credentials.json", parameters: nil, progress: nil, success: { (operation: NSURLSessionDataTask, response: AnyObject?) -> Void in
+                print("It worked!!!")
+                print("user: \(response)")
+                }, failure: { (operation: NSURLSessionDataTask?, error: NSError) -> Void in
+                    print("It did not work")
             })
             
+            }) { (error: NSError!) -> Void in
+                print("An error occurred")
         }
         return true
     }

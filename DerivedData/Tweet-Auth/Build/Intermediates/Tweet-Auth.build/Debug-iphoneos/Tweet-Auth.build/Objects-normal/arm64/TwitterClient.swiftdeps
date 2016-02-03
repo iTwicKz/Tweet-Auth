@@ -11,12 +11,12 @@ provides-member:
 provides-dynamic-lookup:
 - "sharedInstance"
 depends-top-level:
-- "twitterBaseURL"
-- "StringLiteralType"
-- "twitterConsumerSecret"
 - "TwitterClient"
+- "twitterBaseURL"
 - "BDBOAuth1SessionManager"
+- "twitterConsumerSecret"
 - "NSURL"
+- "StringLiteralType"
 - "twitterConsumerKey"
 depends-member:
 - ["CSo20AFHTTPSessionManager", "TwitterClient"]
