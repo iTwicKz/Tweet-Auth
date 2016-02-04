@@ -94,6 +94,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class UIStoryboard;
 @class UIApplication;
 @class NSObject;
 @class NSURL;
@@ -101,7 +102,9 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC10Tweet_Auth11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * __nullable window;
+@property (nonatomic, strong) UIStoryboard * __nonnull storyboard;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
+- (void)userDidLogout;
 - (void)applicationWillResignActive:(UIApplication * __nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
@@ -122,14 +125,30 @@ SWIFT_CLASS("_TtC10Tweet_Auth5Tweet")
 @property (nonatomic, copy) NSString * __nullable createdAtString;
 @property (nonatomic, strong) NSDate * __nullable createdAt;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * __nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
++ (NSArray<Tweet *> * __nonnull)tweetswithArray:(NSArray<NSDictionary *> * __nonnull)array;
 @end
 
-@class NSURLSessionConfiguration;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC10Tweet_Auth20TweetsViewController")
+@interface TweetsViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)onLogout:(id __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSError;
+@class NSURLSessionConfiguration;
 
 SWIFT_CLASS("_TtC10Tweet_Auth13TwitterClient")
 @interface TwitterClient : BDBOAuth1SessionManager
+@property (nonatomic, copy) void (^ __nullable loginCompletion)(User * __nullable, NSError * __nullable);
 + (TwitterClient * __nonnull)sharedInstance;
+- (void)loginWithCompletion:(void (^ __nonnull)(User * __nullable, NSError * __nullable))completion;
+- (void)openURL:(NSURL * __nonnull)url;
 - (null_unspecified instancetype)initWithBaseURL:(NSURL * __null_unspecified)baseURL consumerKey:(NSString * __null_unspecified)consumerKey consumerSecret:(NSString * __null_unspecified)consumerSecret OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBaseURL:(NSURL * __nullable)url sessionConfiguration:(NSURLSessionConfiguration * __nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -144,9 +163,11 @@ SWIFT_CLASS("_TtC10Tweet_Auth4User")
 @property (nonatomic, copy) NSString * __nullable tagLine;
 @property (nonatomic, strong) NSDictionary * __nonnull dictionary;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * __nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (void)logout;
++ (User * __nullable)currentUser;
++ (void)setCurrentUser:(User * __nullable)user;
 @end
 
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10Tweet_Auth14ViewController")
 @interface ViewController : UIViewController

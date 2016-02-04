@@ -1,0 +1,193 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TweetsViewController"
+provides-nominal:
+- "C10Tweet_Auth20TweetsViewController"
+provides-member:
+- ["C10Tweet_Auth20TweetsViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "onLogout"
+depends-top-level:
+- "UIViewController"
+- !private "User"
+- "TweetsViewController"
+- "AnyObject"
+depends-member:
+- !private ["PSs9AnyObject", "User"]
+- !private ["PSs9AnyObject", "currentUser"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "logout"]
+- ["PSs9AnyObject", "onLogout"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "User"]
+- !private ["PSs11CVarArgType", "currentUser"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "logout"]
+- ["PSs11CVarArgType", "onLogout"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "User"]
+- !private ["PSs23CustomStringConvertible", "currentUser"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "logout"]
+- ["PSs23CustomStringConvertible", "onLogout"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "User"]
+- !private ["PSs9Equatable", "currentUser"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "logout"]
+- ["PSs9Equatable", "onLogout"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "User"]
+- !private ["PSs8Hashable", "currentUser"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "logout"]
+- ["PSs8Hashable", "onLogout"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "User"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "onLogout"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "User"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "onLogout"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "User"]
+- !private ["CSo8NSObject", "currentUser"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "logout"]
+- ["CSo8NSObject", "onLogout"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "User"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "logout"]
+- ["PSo16NSObjectProtocol", "onLogout"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C10Tweet_Auth20TweetsViewController", "AnyObject"]
+- !private ["C10Tweet_Auth20TweetsViewController", "User"]
+- ["C10Tweet_Auth20TweetsViewController", "deinit"]
+- ["C10Tweet_Auth20TweetsViewController", "didReceiveMemoryWarning"]
+- ["C10Tweet_Auth20TweetsViewController", "init"]
+- ["C10Tweet_Auth20TweetsViewController", "onLogout"]
+- ["C10Tweet_Auth20TweetsViewController", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "User"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "onLogout"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "User"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "onLogout"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "User"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "onLogout"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "User"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "onLogout"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "User"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "onLogout"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "User"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "onLogout"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "User"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "onLogout"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["C10Tweet_Auth4User", "currentUser"]
+- !private ["C10Tweet_Auth4User", "logout"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C10Tweet_Auth20TweetsViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "C10Tweet_Auth4User"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIWebView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIImage+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/NSString+BDBOAuth1Manager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/NSDictionary+BDBOAuth1Manager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1SessionManager.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1RequestSerializer.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1Manager-umbrella.h"
+- "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Modules/module.modulemap"
+interface-hash: "ebe5ab93adb8d27340638103b57cba29"

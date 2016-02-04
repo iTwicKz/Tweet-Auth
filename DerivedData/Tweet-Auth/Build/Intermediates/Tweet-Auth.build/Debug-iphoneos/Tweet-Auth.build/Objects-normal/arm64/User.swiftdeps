@@ -1,105 +1,345 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "_currentUser"
+- "currentUserKey"
+- "userDidLoginNotification"
+- "userDidLogoutNotification"
 - "User"
 provides-nominal:
 - "C10Tweet_Auth4User"
 provides-member:
 - ["C10Tweet_Auth4User", ""]
 provides-dynamic-lookup:
-- "screenName"
 - "profileImageURL"
+- "logout"
 - "name"
 - "tagLine"
 - "dictionary"
+- "currentUser"
+- "screenName"
 depends-top-level:
-- "NSObject"
-- !private "StringLiteralType"
+- "StringLiteralType"
+- !private "NSNotificationCenter"
+- "_currentUser"
+- !private "NSData"
+- !private "NSUserDefaults"
+- "userDidLoginNotification"
+- !private "TwitterClient"
+- !private "NSJSONSerialization"
+- !private "=="
+- "String"
+- !private "Array"
+- !private "!="
+- "currentUserKey"
+- "userDidLogoutNotification"
 - "NSDictionary"
 - "User"
-- "String"
+- "NSObject"
 depends-member:
+- !private ["CSo23AFHTTPRequestSerializer", "removeAccessToken"]
+- !private ["CSo20AFHTTPSessionManager", "requestSerializer"]
+- !private ["CSo20AFHTTPSessionManager", "sharedInstance"]
+- !private ["PSo25AFURLRequestSerialization", "removeAccessToken"]
+- !private ["CSo19AFURLSessionManager", "requestSerializer"]
+- !private ["CSo19AFURLSessionManager", "sharedInstance"]
+- !private ["PSs9AnyObject", "JSONObjectWithData"]
+- !private ["PSs9AnyObject", "NSJSONSerialization"]
+- !private ["PSs9AnyObject", "NSNotificationCenter"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "TwitterClient"]
+- !private ["PSs9AnyObject", "User"]
+- !private ["PSs9AnyObject", "_currentUser"]
+- ["PSs9AnyObject", "currentUser"]
+- !private ["PSs9AnyObject", "currentUserKey"]
+- !private ["PSs9AnyObject", "dataWithJSONObject"]
+- !private ["PSs9AnyObject", "defaultCenter"]
 - ["PSs9AnyObject", "dictionary"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "logout"]
 - ["PSs9AnyObject", "name"]
+- !private ["PSs9AnyObject", "objectForKey"]
+- !private ["PSs9AnyObject", "postNotificationName"]
 - ["PSs9AnyObject", "profileImageURL"]
+- !private ["PSs9AnyObject", "removeAccessToken"]
+- !private ["PSs9AnyObject", "requestSerializer"]
 - ["PSs9AnyObject", "screenName"]
+- !private ["PSs9AnyObject", "setObject"]
+- !private ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "synchronize"]
 - ["PSs9AnyObject", "tagLine"]
+- !private ["PSs9AnyObject", "userDidLogoutNotification"]
 - ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["CSo26BDBOAuth1RequestSerializer", "removeAccessToken"]
+- !private ["CSo23BDBOAuth1SessionManager", "requestSerializer"]
+- !private ["CSo23BDBOAuth1SessionManager", "sharedInstance"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "JSONObjectWithData"]
+- !private ["PSs11CVarArgType", "NSJSONSerialization"]
+- !private ["PSs11CVarArgType", "NSNotificationCenter"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "TwitterClient"]
+- !private ["PSs11CVarArgType", "User"]
+- !private ["PSs11CVarArgType", "_currentUser"]
+- ["PSs11CVarArgType", "currentUser"]
+- !private ["PSs11CVarArgType", "currentUserKey"]
+- !private ["PSs11CVarArgType", "dataWithJSONObject"]
+- !private ["PSs11CVarArgType", "defaultCenter"]
 - ["PSs11CVarArgType", "dictionary"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "logout"]
 - ["PSs11CVarArgType", "name"]
+- !private ["PSs11CVarArgType", "objectForKey"]
+- !private ["PSs11CVarArgType", "postNotificationName"]
 - ["PSs11CVarArgType", "profileImageURL"]
+- !private ["PSs11CVarArgType", "removeAccessToken"]
+- !private ["PSs11CVarArgType", "requestSerializer"]
 - ["PSs11CVarArgType", "screenName"]
+- !private ["PSs11CVarArgType", "setObject"]
+- !private ["PSs11CVarArgType", "sharedInstance"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "synchronize"]
 - ["PSs11CVarArgType", "tagLine"]
+- !private ["PSs11CVarArgType", "userDidLogoutNotification"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "JSONObjectWithData"]
+- !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["PSs23CustomStringConvertible", "NSNotificationCenter"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "TwitterClient"]
+- !private ["PSs23CustomStringConvertible", "User"]
+- !private ["PSs23CustomStringConvertible", "_currentUser"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "currentUser"]
+- !private ["PSs23CustomStringConvertible", "currentUserKey"]
+- !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
+- !private ["PSs23CustomStringConvertible", "defaultCenter"]
 - ["PSs23CustomStringConvertible", "dictionary"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "logout"]
 - ["PSs23CustomStringConvertible", "name"]
+- !private ["PSs23CustomStringConvertible", "objectForKey"]
+- !private ["PSs23CustomStringConvertible", "postNotificationName"]
 - ["PSs23CustomStringConvertible", "profileImageURL"]
+- !private ["PSs23CustomStringConvertible", "removeAccessToken"]
+- !private ["PSs23CustomStringConvertible", "requestSerializer"]
 - ["PSs23CustomStringConvertible", "screenName"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
+- !private ["PSs23CustomStringConvertible", "sharedInstance"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
 - ["PSs23CustomStringConvertible", "tagLine"]
+- !private ["PSs23CustomStringConvertible", "userDidLogoutNotification"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "Element"]
+- !private ["PSs9Equatable", "JSONObjectWithData"]
+- !private ["PSs9Equatable", "NSJSONSerialization"]
+- !private ["PSs9Equatable", "NSNotificationCenter"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "TwitterClient"]
+- !private ["PSs9Equatable", "User"]
+- !private ["PSs9Equatable", "_currentUser"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "currentUser"]
+- !private ["PSs9Equatable", "currentUserKey"]
+- !private ["PSs9Equatable", "dataWithJSONObject"]
+- !private ["PSs9Equatable", "defaultCenter"]
 - ["PSs9Equatable", "dictionary"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "logout"]
 - ["PSs9Equatable", "name"]
+- !private ["PSs9Equatable", "objectForKey"]
+- !private ["PSs9Equatable", "postNotificationName"]
 - ["PSs9Equatable", "profileImageURL"]
+- !private ["PSs9Equatable", "removeAccessToken"]
+- !private ["PSs9Equatable", "requestSerializer"]
 - ["PSs9Equatable", "screenName"]
+- !private ["PSs9Equatable", "setObject"]
+- !private ["PSs9Equatable", "sharedInstance"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "synchronize"]
 - ["PSs9Equatable", "tagLine"]
+- !private ["PSs9Equatable", "userDidLogoutNotification"]
 - ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "JSONObjectWithData"]
+- !private ["PSs8Hashable", "NSJSONSerialization"]
+- !private ["PSs8Hashable", "NSNotificationCenter"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "TwitterClient"]
+- !private ["PSs8Hashable", "User"]
+- !private ["PSs8Hashable", "_currentUser"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "currentUser"]
+- !private ["PSs8Hashable", "currentUserKey"]
+- !private ["PSs8Hashable", "dataWithJSONObject"]
+- !private ["PSs8Hashable", "defaultCenter"]
 - ["PSs8Hashable", "dictionary"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "logout"]
 - ["PSs8Hashable", "name"]
+- !private ["PSs8Hashable", "objectForKey"]
+- !private ["PSs8Hashable", "postNotificationName"]
 - ["PSs8Hashable", "profileImageURL"]
+- !private ["PSs8Hashable", "removeAccessToken"]
+- !private ["PSs8Hashable", "requestSerializer"]
 - ["PSs8Hashable", "screenName"]
+- !private ["PSs8Hashable", "setObject"]
+- !private ["PSs8Hashable", "sharedInstance"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "synchronize"]
 - ["PSs8Hashable", "tagLine"]
+- !private ["PSs8Hashable", "userDidLogoutNotification"]
 - ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "removeAccessToken"]
+- !private ["PSo8NSCoding", "requestSerializer"]
+- !private ["PSo8NSCoding", "sharedInstance"]
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "removeAccessToken"]
+- !private ["PSo9NSCopying", "requestSerializer"]
+- !private ["PSo9NSCopying", "sharedInstance"]
 - !private ["PSo9NSCopying", "subscript"]
 - !private ["CSo12NSDictionary", "subscript"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["VSC20NSJSONReadingOptions", "Element"]
+- !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
+- !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
+- !private ["VSC20NSJSONWritingOptions", "Element"]
 - !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo8NSObject", "JSONObjectWithData"]
+- !private ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "NSDictionary"]
+- !private ["CSo8NSObject", "NSJSONSerialization"]
+- !private ["CSo8NSObject", "NSNotificationCenter"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "TwitterClient"]
+- ["CSo8NSObject", "User"]
+- !private ["CSo8NSObject", "_currentUser"]
+- ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "currentUserKey"]
+- !private ["CSo8NSObject", "dataWithJSONObject"]
+- !private ["CSo8NSObject", "defaultCenter"]
 - ["CSo8NSObject", "dictionary"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "logout"]
 - ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "objectForKey"]
+- !private ["CSo8NSObject", "postNotificationName"]
 - ["CSo8NSObject", "profileImageURL"]
+- !private ["CSo8NSObject", "removeAccessToken"]
+- !private ["CSo8NSObject", "requestSerializer"]
 - ["CSo8NSObject", "screenName"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "synchronize"]
 - ["CSo8NSObject", "tagLine"]
+- !private ["CSo8NSObject", "userDidLogoutNotification"]
 - ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "TwitterClient"]
+- !private ["PSo16NSObjectProtocol", "User"]
+- !private ["PSo16NSObjectProtocol", "_currentUser"]
+- ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "currentUserKey"]
+- !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - ["PSo16NSObjectProtocol", "dictionary"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "logout"]
 - ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "objectForKey"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
 - ["PSo16NSObjectProtocol", "profileImageURL"]
+- !private ["PSo16NSObjectProtocol", "removeAccessToken"]
+- !private ["PSo16NSObjectProtocol", "requestSerializer"]
 - ["PSo16NSObjectProtocol", "screenName"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
 - ["PSo16NSObjectProtocol", "tagLine"]
+- !private ["PSo16NSObjectProtocol", "userDidLogoutNotification"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "removeAccessToken"]
+- !private ["PSo14NSSecureCoding", "requestSerializer"]
+- !private ["PSo14NSSecureCoding", "sharedInstance"]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["PSo24NSURLSessionDataDelegate", "requestSerializer"]
+- !private ["PSo24NSURLSessionDataDelegate", "sharedInstance"]
+- !private ["PSo20NSURLSessionDelegate", "requestSerializer"]
+- !private ["PSo20NSURLSessionDelegate", "sharedInstance"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "requestSerializer"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "sharedInstance"]
+- !private ["PSo24NSURLSessionTaskDelegate", "requestSerializer"]
+- !private ["PSo24NSURLSessionTaskDelegate", "sharedInstance"]
+- !private ["CSo14NSUserDefaults", "objectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["PSs13OptionSetType", "Element"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16RawRepresentable", "Element"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Element"]
 - !private ["VSs12StaticString", "deinit"]
 - !private ["SS", "deinit"]
+- !private ["C10Tweet_Auth13TwitterClient", "requestSerializer"]
+- !private ["C10Tweet_Auth13TwitterClient", "sharedInstance"]
+- !private ["C10Tweet_Auth4User", "NSData"]
 - ["C10Tweet_Auth4User", "NSDictionary"]
+- !private ["C10Tweet_Auth4User", "NSJSONSerialization"]
+- !private ["C10Tweet_Auth4User", "NSNotificationCenter"]
+- !private ["C10Tweet_Auth4User", "NSUserDefaults"]
 - ["C10Tweet_Auth4User", "String"]
+- !private ["C10Tweet_Auth4User", "TwitterClient"]
+- ["C10Tweet_Auth4User", "User"]
+- !private ["C10Tweet_Auth4User", "_currentUser"]
+- ["C10Tweet_Auth4User", "currentUser"]
+- !private ["C10Tweet_Auth4User", "currentUserKey"]
 - ["C10Tweet_Auth4User", "deinit"]
 - ["C10Tweet_Auth4User", "dictionary"]
 - ["C10Tweet_Auth4User", "init"]
+- ["C10Tweet_Auth4User", "logout"]
 - ["C10Tweet_Auth4User", "name"]
 - ["C10Tweet_Auth4User", "profileImageURL"]
 - ["C10Tweet_Auth4User", "screenName"]
 - ["C10Tweet_Auth4User", "tagLine"]
+- !private ["C10Tweet_Auth4User", "userDidLogoutNotification"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "subscript"]
 depends-nominal:
+- !private "CSo23AFHTTPRequestSerializer"
+- !private "CSo20AFHTTPSessionManager"
+- !private "PSo25AFURLRequestSerialization"
+- !private "CSo19AFURLSessionManager"
 - "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "CSo26BDBOAuth1RequestSerializer"
+- !private "CSo23BDBOAuth1SessionManager"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
 - "PSs23CustomStringConvertible"
 - !private "PSs28DictionaryLiteralConvertible"
@@ -109,15 +349,31 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - !private "CSo12NSDictionary"
 - !private "PSo17NSFastEnumeration"
+- !private "VSC20NSJSONReadingOptions"
+- !private "CSo19NSJSONSerialization"
+- !private "VSC20NSJSONWritingOptions"
 - !private "PSo16NSMutableCopying"
+- !private "CSo20NSNotificationCenter"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
+- !private "CSo14NSUserDefaults"
+- !private "PSs13OptionSetType"
 - !private "Sq"
+- !private "PSs16RawRepresentable"
 - !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
 - !private "VSs12StaticString"
 - !private "SS"
+- !private "C10Tweet_Auth13TwitterClient"
 - "C10Tweet_Auth4User"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -155,4 +411,4 @@ depends-external:
 - "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1RequestSerializer.h"
 - "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Headers/BDBOAuth1Manager-umbrella.h"
 - "/Users/Takashi/Documents/Tweet-Auth/DerivedData/Tweet-Auth/Build/Products/Debug-iphoneos/BDBOAuth1Manager.framework/Modules/module.modulemap"
-interface-hash: "b083653d95f790254f6b301cba9ebe21"
+interface-hash: "7e4f0a1bca25408728f75a23cd70e92f"

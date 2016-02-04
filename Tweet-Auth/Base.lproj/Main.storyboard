@@ -24,10 +24,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Q7T-kO-sUz" kind="modal" identifier="loginSegue" id="RC6-Jd-93d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.66666666666666" y="317.60666666666668"/>
+            <point key="canvasLocation" x="213" y="325"/>
+        </scene>
+        <!--Tweets View Controller-->
+        <scene sceneID="MO0-2H-eDJ">
+            <objects>
+                <viewController storyboardIdentifier="TweetsViewController" id="Q7T-kO-sUz" customClass="TweetsViewController" customModule="Tweet_Auth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TweetsViewController" id="n7Y-FW-HEv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qur-k0-1tS">
+                                <rect key="frame" x="136" y="167" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogout:" destination="Q7T-kO-sUz" eventType="touchUpInside" id="Hlt-XB-GlF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kej-Kd-srb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="325"/>
         </scene>
     </scenes>
 </document>

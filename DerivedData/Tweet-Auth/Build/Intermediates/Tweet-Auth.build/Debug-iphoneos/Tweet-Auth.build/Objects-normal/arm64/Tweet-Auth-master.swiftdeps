@@ -1,9 +1,10 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "50a547928c0dd9ad1373998fe332e15d"
-build_time: [507776065, 33577000]
+build_time: [507786180, 423334000]
 inputs:
-  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/Tweet.swift": [507776064, 0]
-  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/AppDelegate.swift": [507774566, 0]
-  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/ViewController.swift": [507776064, 0]
-  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/User.swift": [507775707, 0]
-  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/TwitterClient.swift": [507764570, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/Tweet.swift": [507780033, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/ViewController.swift": [507781473, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/AppDelegate.swift": [507786180, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/TwitterClient.swift": [507784686, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/TweetsViewController.swift": [507786108, 0]
+  "/Users/Takashi/Documents/Tweet-Auth/Tweet-Auth/User.swift": [507785681, 0]

@@ -24,4 +24,14 @@ class Tweet: NSObject {
         createdAt = formatter.dateFromString(createdAtString!)
     }
     
+    class func tweetswithArray(array: [NSDictionary]) -> [Tweet] {
+        var tweets = [Tweet]()
+        
+        for dictionary in array {
+            tweets.append(Tweet(dictionary: dictionary))
+        }
+        
+        return tweets
+    }
+    
 }
